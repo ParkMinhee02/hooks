@@ -3,7 +3,7 @@ import './App.css';
 
 const hardCalculate = (number) => {
 	console.log('어려운 계산');
-	for(let i = 0; i< 9999999; i++) {}
+	for(let i = 0; i< 999999999; i++) {}
 	return number + 10000;
 };
 const easyCalculate = (number) => {
@@ -11,7 +11,7 @@ const easyCalculate = (number) => {
 	return number+1
 }
 
-function App() {
+function App1() {
 	/* const value = useMemo(()=> {
 		return 내용();
 	},[]); */
@@ -21,6 +21,7 @@ function App() {
 	const hardSum = useMemo(() => {
 		return hardCalculate(hardNumber)
 	},[hardNumber]);
+	/* const hardSum = hardCalculate(hardNumber); */
 	const easySum = easyCalculate(easyNumber);
 
   return (
@@ -39,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default App1;
